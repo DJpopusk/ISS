@@ -38,11 +38,15 @@ class Gym : public LivingQuarters {
     // Gym
 };
 
-class Unmanned : public Laboratories {
-    // Unmanned laboratories
+class Zerogravity : public Laboratories {
+    // Zero gravity based exp laboratories
 };
 
-class Manipulators : public Laboratories {
+class Gravity : public Laboratories {
+    // Gravity based exp laboratories
+};
+
+class Manipulators : public ControlledbyPeople {
     // Manipulators
 };
 
