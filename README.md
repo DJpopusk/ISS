@@ -3,4 +3,4 @@ An OOP model of the ISS of the entire block structure with fields and methods co
 It is supplemented by the implementation of an additional method for approximate estimation of the energy generated from solar panels, depending on the current location of the station
 //
 ООП модель МКС всей блочной структуры с соответствующими каждому блоку полями и методами, смоделированными, в том числе с учетом влияния космонавтов.  
-Дополнена реализацией дополнительного метода приближенной оценки вырабатываемой энергии от солнечных батарей в зависимости от текущего местоположения станции.
+Дополнена реализацией метода приближенной оценки потребляемой станцией и вырабатываемой от солнечных батарей энергией в зависимости от текущего местоположения станции.
