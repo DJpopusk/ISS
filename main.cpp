@@ -7,12 +7,19 @@
 #include <map>
 #include <cmath>
 #include <chrono>
- // Base libraries
 
-class MKS {
-    // Base class
-};
+class MKS { // Base class
+private:
+double population;
+Point coordinates;
 
+public:
+
+    
+get_population(){return population;}
+
+get_coordinates(){return coordinates;}
+}
 class ControlledbyPeople : public MKS {
     // Blocks managing by people
 };
