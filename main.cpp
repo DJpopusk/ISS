@@ -12,6 +12,8 @@ class MKS { // Base class
 private:
 double population;
 Point coordinates;
+double mass;//440 075
+double volume;//916
 
 public:
 
