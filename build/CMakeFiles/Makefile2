@@ -54,20 +54,20 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/phonkyponky/CLionprojects/ISS
+CMAKE_SOURCE_DIR = /Users/phonkyponky/CLionProjects/ISS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/phonkyponky/CLionprojects/ISS/build
+CMAKE_BINARY_DIR = /Users/phonkyponky/CLionProjects/ISS/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/example.dir/all
+all: CMakeFiles/SpaceControlSystem.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/example.dir/codegen
+codegen: CMakeFiles/SpaceControlSystem.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +75,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/example.dir/clean
+clean: CMakeFiles/SpaceControlSystem.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/example.dir
+# Target rules for target CMakeFiles/SpaceControlSystem.dir
 
 # All Build rule for target.
-CMakeFiles/example.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionprojects/ISS/build/CMakeFiles --progress-num=1,2 "Built target example"
-.PHONY : CMakeFiles/example.dir/all
+CMakeFiles/SpaceControlSystem.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=1,2,3 "Built target SpaceControlSystem"
+.PHONY : CMakeFiles/SpaceControlSystem.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionprojects/ISS/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionprojects/ISS/build/CMakeFiles 0
-.PHONY : CMakeFiles/example.dir/rule
+CMakeFiles/SpaceControlSystem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpaceControlSystem.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 0
+.PHONY : CMakeFiles/SpaceControlSystem.dir/rule
 
 # Convenience name for target.
-example: CMakeFiles/example.dir/rule
-.PHONY : example
+SpaceControlSystem: CMakeFiles/SpaceControlSystem.dir/rule
+.PHONY : SpaceControlSystem
 
 # codegen rule for target.
-CMakeFiles/example.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/codegen
-.PHONY : CMakeFiles/example.dir/codegen
+CMakeFiles/SpaceControlSystem.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/codegen
+.PHONY : CMakeFiles/SpaceControlSystem.dir/codegen
 
 # clean rule for target.
-CMakeFiles/example.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/clean
-.PHONY : CMakeFiles/example.dir/clean
+CMakeFiles/SpaceControlSystem.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/clean
+.PHONY : CMakeFiles/SpaceControlSystem.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

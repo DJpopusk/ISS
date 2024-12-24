@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/phonkyponky/CLionprojects/ISS
+CMAKE_SOURCE_DIR = /Users/phonkyponky/CLionProjects/ISS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/phonkyponky/CLionprojects/ISS/build
+CMAKE_BINARY_DIR = /Users/phonkyponky/CLionProjects/ISS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionprojects/ISS/build/CMakeFiles /Users/phonkyponky/CLionprojects/ISS/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles /Users/phonkyponky/CLionProjects/ISS/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionprojects/ISS/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named example
+# Target rules for targets named SpaceControlSystem
 
 # Build rule for target.
-example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example
-.PHONY : example
+SpaceControlSystem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpaceControlSystem
+.PHONY : SpaceControlSystem
 
 # fast build rule for target.
-example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-.PHONY : example/fast
+SpaceControlSystem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/build
+.PHONY : SpaceControlSystem/fast
 
-main2.o: main2.cpp.o
-.PHONY : main2.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/main2.cpp.o
-.PHONY : main2.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main2.i: main2.cpp.i
-.PHONY : main2.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/main2.cpp.i
-.PHONY : main2.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main2.s: main2.cpp.s
-.PHONY : main2.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/main2.cpp.s
-.PHONY : main2.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/spacecontrol.o: src/spacecontrol.cpp.o
+.PHONY : src/spacecontrol.o
+
+# target to build an object file
+src/spacecontrol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.o
+.PHONY : src/spacecontrol.cpp.o
+
+src/spacecontrol.i: src/spacecontrol.cpp.i
+.PHONY : src/spacecontrol.i
+
+# target to preprocess a source file
+src/spacecontrol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.i
+.PHONY : src/spacecontrol.cpp.i
+
+src/spacecontrol.s: src/spacecontrol.cpp.s
+.PHONY : src/spacecontrol.s
+
+# target to generate assembly for a file
+src/spacecontrol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.s
+.PHONY : src/spacecontrol.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... example"
-	@echo "... main2.o"
-	@echo "... main2.i"
-	@echo "... main2.s"
+	@echo "... SpaceControlSystem"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/spacecontrol.o"
+	@echo "... src/spacecontrol.i"
+	@echo "... src/spacecontrol.s"
 .PHONY : help
 
 
