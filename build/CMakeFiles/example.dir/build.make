@@ -95,6 +95,8 @@ example_EXTERNAL_OBJECTS =
 
 example: CMakeFiles/example.dir/main.cpp.o
 example: CMakeFiles/example.dir/build.make
+example: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libcurl.tbd
+example: /opt/homebrew/lib/libjsoncpp.26.dylib
 example: CMakeFiles/example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/am-hkong/Documents/coding/Uni/C++/SpaceProject/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example.dir/link.txt --verbose=$(VERBOSE)
