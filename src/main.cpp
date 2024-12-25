@@ -21,9 +21,9 @@ int main() {
     std::string line;
     std::vector<SpaceControl*> systems;
 
-    double o2Level = 0.21; // Example data
-    double co2Level = 0.03; // Example data
-    double energyOutput = 1000.0; // Example data
+    double o2Level = 0.21;
+    double co2Level = 0.03;
+    double energyOutput = 1000.0;
 
     systems.push_back(new LifeSupport(o2Level, co2Level));
     systems.push_back(new PowerSystem(energyOutput));
@@ -35,7 +35,7 @@ int main() {
     }
 
     if (positions.size() >= 2) {
-        systems.push_back(new Propulsion(positions, 60.0)); // deltaTime = 60 seconds
+        systems.push_back(new Propulsion(positions, 60.0));
     } else {
         std::cerr << "Insufficient data to calculate speed." << std::endl;
     }

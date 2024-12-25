@@ -46,7 +46,7 @@ double Propulsion::calculateSpeed() const {
     double altitudeChange = end.altitude - start.altitude;
     double distance = std::sqrt(std::pow(surfaceDistance, 2) + std::pow(altitudeChange, 2));
 
-    return distance / deltaTime; // Speed = distance / time
+    return distance / deltaTime;
 }
 
 void Propulsion::displayInfo() const {
