@@ -21,7 +21,7 @@ def plot_trajectory(file_path):
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(__file__)
-    rel_path = "../build/output/thrust_data.txt"
+    rel_path = "../build/output/coordinates.txt"
     file_path = os.path.join(script_dir, rel_path)
 
     plot_trajectory(file_path)

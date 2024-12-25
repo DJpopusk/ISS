@@ -1,5 +1,8 @@
 #include "spacecontrol.h"
+#include <cmath>
+#include <iostream>
 
+const double RADIUS_EARTH = 6371.0;
 
 LifeSupport::LifeSupport(double o2, double co2) : oxygenLevel(o2), co2Level(co2) {}
 
@@ -14,40 +17,40 @@ void PowerSystem::displayInfo() const {
     std::cout << "Power System: Energy Output: " << energyOutput << " kW" << std::endl;
 }
 
-Propulsion::Propulsion(double thrustValue) : thrust(thrustValue) {}
+Propulsion::Propulsion(const std::vector<Position>& pos, double dT)
+    : positions(pos), deltaTime(dT) {}
 
-Propulsion::Propulsion() : thrust(0.0) {}
+double Propulsion::calculateSpeed() const {
+    if (positions.size() < 2) return 0.0;
 
-void Propulsion::calculateThrust(std::vector<std::pair<double,double>> coordinates) {
-    thrust = 0.0; // Надо изменять член класса, а не параметр
-    for (const auto& coord : coordinates) {
-        double dist = std::sqrt(coord.first * coord.first + coord.second * coord.second);
-        thrust += dist; // Замените на ваш метод вычисления тяги
-    }
-}
+    const Position& start = positions.front();
+    const Position& end = positions.back();
 
-void Propulsion::recordData(const std::string &filename) const {
-    std::filesystem::path filepath(filename);
-    std::filesystem::create_directories(filepath.parent_path());
+    // Convert degrees to radians
+    auto toRadians = [](double degree) { return degree * M_PI / 180.0; };
 
-    std::ofstream file(filename, std::ios::out | std::ios::app);
-    if (!file.is_open()) {
-        std::cerr << "Error opening file: " << filename << std::endl;
-        return;
-    }
+    double lat1 = toRadians(start.latitude) * (start.latDirection == 'S' ? -1 : 1);
+    double lon1 = toRadians(start.longitude) * (start.longDirection == 'W' ? -1 : 1);
+    double lat2 = toRadians(end.latitude) * (end.latDirection == 'S' ? -1 : 1);
+    double lon2 = toRadians(end.longitude) * (end.longDirection == 'W' ? -1 : 1);
 
-    for (const auto &data : thrustData) {
-        file << data.first << " " << data.second << std::endl;
-    }
+    double dLat = lat2 - lat1;
+    double dLon = lon2 - lon1;
 
-    file.close();
+    double a = std::pow(std::sin(dLat / 2), 2) +
+               std::cos(lat1) * std::cos(lat2) * std::pow(std::sin(dLon / 2), 2);
+
+    double c = 2 * std::atan2(std::sqrt(a), std::sqrt(1 - a));
+
+    double surfaceDistance = RADIUS_EARTH * c;
+    double altitudeChange = end.altitude - start.altitude;
+    double distance = std::sqrt(std::pow(surfaceDistance, 2) + std::pow(altitudeChange, 2));
+
+    return distance / deltaTime; // Speed = distance / time
 }
 
 void Propulsion::displayInfo() const {
-    std::cout << "Propulsion: Thrust: " << thrust << " N" << std::endl;
-    for (const auto &data : thrustData) {
-        std::cout << "Thrust: " << data.first << ", Duration: " << data.second << std::endl;
-    }
+    std::cout << "Propulsion System: Calculated Speed = " << calculateSpeed() << " km/s" << std::endl;
 }
 
 Laboratory::Laboratory(const std::string& exp, int count) : experiments(exp), personnelCount(count) {}

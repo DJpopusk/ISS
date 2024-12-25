@@ -5,9 +5,8 @@
 #include <string>
 #include <utility>
 #include <iostream>
-#include <fstream>
-#include <filesystem>
 
+// Forward declare classes if used before their definition
 class SpaceControl {
 public:
     virtual void displayInfo() const = 0;
@@ -31,16 +30,22 @@ public:
 };
 
 class Propulsion : public SpaceControl {
-private:
-    double thrust;
-    std::vector<std::pair<double, double>> thrustData;
-    std::vector<std::pair<double, double>> coordinates;
-
 public:
-    Propulsion();
-    Propulsion(double thrustValue);
-    void calculateThrust(std::vector<std::pair<double, double>> coordinates); // исправлены параметры
-    void recordData(const std::string &filename) const;
+    struct Position {
+        double latitude;
+        char latDirection; // 'N' or 'S'
+        double longitude;
+        char longDirection; // 'E' or 'W'
+        double altitude;
+
+        Position(double lat, char latDir, double lon, char longDir, double alt)
+            : latitude(lat), latDirection(latDir), longitude(lon), longDirection(longDir), altitude(alt) {}
+    };
+
+    std::vector<Position> positions;
+    double deltaTime;
+    Propulsion(const std::vector<Position>& pos, double dT);
+    double calculateSpeed() const;
     void displayInfo() const override;
 };
 

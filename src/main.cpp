@@ -1,27 +1,53 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
 #include <vector>
-#include <utility>
 #include "spacecontrol.h"
 
+std::tuple<double, char, double, char, double> parseCoordinates(const std::string& coordinateString) {
+    double latitude, longitude, altitude;
+    char latDir, longDir;
+    std::istringstream iss(coordinateString);
+    char comma;
+
+    iss >> latitude >> comma >> latDir >> comma >> longitude >> comma >> longDir >> comma >> altitude;
+
+    return std::make_tuple(latitude, latDir, longitude, longDir, altitude);
+}
+
 int main() {
-    // Создаем объект Propulsion с начальным значением тяги
-    Propulsion propulsionSystem(10.0);
+    std::ifstream file("output/coordinates.txt");
+    std::string line;
+    std::vector<SpaceControl*> systems;
 
-    // Задаем несколько координат кучек объектов
-    std::vector<std::pair<double, double>> coordinates = {
-        {1.0, 2.0}, {3.0, 4.0}, {5.0, 6.0}
-    };
+    double o2Level = 0.21; // Example data
+    double co2Level = 0.03; // Example data
+    double energyOutput = 1000.0; // Example data
 
-    // Рассчитываем тягу на основании координат
-    propulsionSystem.calculateThrust(coordinates);
+    systems.push_back(new LifeSupport(o2Level, co2Level));
+    systems.push_back(new PowerSystem(energyOutput));
 
-    // Выводим информацию о системе
-    propulsionSystem.displayInfo();
+    std::vector<Propulsion::Position> positions;
+    while (std::getline(file, line)) {
+        auto [latitude, latDir, longitude, longDir, altitude] = parseCoordinates(line);
+        positions.emplace_back(latitude, latDir, longitude, longDir, altitude);
+    }
 
-    // Записываем данные в файл
-    std::string filename = "output/thrust_data.txt";
-    propulsionSystem.recordData(filename);
-    std::cout << "Thrust data recorded in file: " << filename << std::endl;
+    if (positions.size() >= 2) {
+        systems.push_back(new Propulsion(positions, 60.0)); // deltaTime = 60 seconds
+    } else {
+        std::cerr << "Insufficient data to calculate speed." << std::endl;
+    }
 
+    for (const auto& system : systems) {
+        system->displayInfo();
+    }
+
+    for (auto& system : systems) {
+        delete system;
+    }
+
+    file.close();
     return 0;
 }
