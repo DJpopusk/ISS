@@ -34,10 +34,12 @@ class Propulsion : public SpaceControl {
 private:
     double thrust;
     std::vector<std::pair<double, double>> thrustData;
+    std::vector<std::pair<double, double>> coordinates;
+
 public:
     Propulsion();
     Propulsion(double thrustValue);
-    void applyThrust(double thrust, double duration);
+    void calculateThrust(std::vector<std::pair<double, double>> coordinates); // исправлены параметры
     void recordData(const std::string &filename) const;
     void displayInfo() const override;
 };

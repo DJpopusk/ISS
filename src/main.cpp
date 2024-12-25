@@ -1,32 +1,27 @@
 #include <iostream>
+#include <vector>
+#include <utility>
 #include "spacecontrol.h"
-#include <filesystem>
 
 int main() {
-    Propulsion propulsionSystem;
+    // Создаем объект Propulsion с начальным значением тяги
+    Propulsion propulsionSystem(10.0);
 
-    propulsionSystem.applyThrust(100.0, 2.5);
-    propulsionSystem.applyThrust(150.0, 3.0);
-    propulsionSystem.applyThrust(200.0, 1.8);
+    // Задаем несколько координат кучек объектов
+    std::vector<std::pair<double, double>> coordinates = {
+        {1.0, 2.0}, {3.0, 4.0}, {5.0, 6.0}
+    };
 
+    // Рассчитываем тягу на основании координат
+    propulsionSystem.calculateThrust(coordinates);
+
+    // Выводим информацию о системе
     propulsionSystem.displayInfo();
 
-    std::string directory = "output";
-    std::string filename = "thrust_data.txt";
-
-    try {
-        if (!std::filesystem::exists(directory)) {
-            std::filesystem::create_directory(directory);
-        }
-
-        propulsionSystem.recordData(directory + "/" + filename);
-
-        std::cout << "Data recorded successfully in " << directory + "/" + filename << std::endl;
-    } catch (const std::filesystem::filesystem_error &e) {
-        std::cerr << "Filesystem error: " << e.what() << std::endl;
-    } catch (const std::exception &e) {
-        std::cerr << "Error: " << e.what() << std::endl;
-    }
+    // Записываем данные в файл
+    std::string filename = "output/thrust_data.txt";
+    propulsionSystem.recordData(filename);
+    std::cout << "Thrust data recorded in file: " << filename << std::endl;
 
     return 0;
 }

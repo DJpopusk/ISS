@@ -1,5 +1,6 @@
 #include "spacecontrol.h"
 
+
 LifeSupport::LifeSupport(double o2, double co2) : oxygenLevel(o2), co2Level(co2) {}
 
 void LifeSupport::displayInfo() const {
@@ -17,8 +18,12 @@ Propulsion::Propulsion(double thrustValue) : thrust(thrustValue) {}
 
 Propulsion::Propulsion() : thrust(0.0) {}
 
-void Propulsion::applyThrust(double thrust, double duration) {
-    thrustData.emplace_back(thrust, duration);
+void Propulsion::calculateThrust(std::vector<std::pair<double,double>> coordinates) {
+    thrust = 0.0; // Надо изменять член класса, а не параметр
+    for (const auto& coord : coordinates) {
+        double dist = std::sqrt(coord.first * coord.first + coord.second * coord.second);
+        thrust += dist; // Замените на ваш метод вычисления тяги
+    }
 }
 
 void Propulsion::recordData(const std::string &filename) const {
