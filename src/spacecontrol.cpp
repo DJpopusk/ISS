@@ -3,8 +3,8 @@
 #include <sstream>
 #include <cmath>
 #include <iostream>
+#include <ctime>
 
-const double RADIUS_EARTH = 6371.0;
 
 LifeSupport::LifeSupport(double o2, double co2) : oxygenLevel(o2), co2Level(co2) {}
 
@@ -13,15 +13,69 @@ void LifeSupport::displayInfo() const {
               << ", CO2 level: " << co2Level << std::endl;
 }
 
+
+
+const double RADIUS_EARTH = 6371.0;
+
 PowerSystem::PowerSystem(double output) : energyOutput(output) {}
 
 void PowerSystem::displayInfo() const {
     std::cout << "Current energy output: " << energyOutput << std::endl;
 }
 
-bool PowerSystem::isPositionSunny(double latitude, double longitude, double altitude) {
-    return (altitude > 0);
+double calculateJulianDate() {
+    time_t now = time(0);
+    struct tm* utc_time = gmtime(&now);
+    int year = utc_time->tm_year + 1900;
+    int month = utc_time->tm_mon + 1;
+    int day = utc_time->tm_mday;
+
+    if (month <= 2) {
+        year -= 1;
+        month += 12;
+    }
+
+    int A = year / 100;
+    int B = 2 - A + (A / 4);
+
+    double JD = floor(365.25 * (year + 4716)) + floor(30.6001 * (month + 1)) + day + B - 1524.5;
+    JD += (utc_time->tm_hour + utc_time->tm_min / 60.0 + utc_time->tm_sec / 3600.0) / 24.0;
+    return JD;
 }
+
+double sunDeclination(double JD) {
+    double n = JD - 2451545.0;
+    double L = 280.46 + 0.9856474 * n;
+    L = fmod(L, 360.0);
+    if (L < 0) L += 360.0;
+
+    double g = 357.528 + 0.9856003 * n;
+    g = fmod(g, 360.0);
+
+    double lambda = L + 1.915 * sin(g * M_PI / 180) + 0.020 * sin(2 * g * M_PI / 180);
+    return asin(sin(lambda * M_PI / 180) * sin(23.44 * M_PI / 180)) * 180 / M_PI;
+}
+
+double calculateHourAngle(double longitude, double JD) {
+    double n = JD - 2451545.0;
+    double LST = fmod(280.46061837 + 360.98564736629 * n + longitude, 360.0);
+    return LST;
+}
+bool PowerSystem::isPositionSunny(double latitude, double longitude, double altitude) {
+    double JD = calculateJulianDate();
+    double declination = sunDeclination(JD);
+    double hourAngle = calculateHourAngle(longitude, JD);
+
+    // Calculate solar altitude
+    double latRad = latitude * M_PI / 180;
+    double decRad = declination * M_PI / 180;
+    double hourAngleRad = (hourAngle - 180) * M_PI / 180;
+
+    double altitudeAngle = asin(sin(latRad) * sin(decRad) + cos(latRad) * cos(decRad) * cos(hourAngleRad)) * 180 / M_PI;
+
+    return altitudeAngle > 0;
+}
+
 
 void PowerSystem::determineSunlightExposure(const std::string& filePath) {
     std::ifstream inFile(filePath);
