@@ -6,7 +6,7 @@ from astropy import units as u
 def is_in_earth_shadow(lat, lon, alt):
     time = Time.now()
 
-    location = EarthLocation(lat=lat*u.deg, lon=lon*u.deg, height=alt*u.m)
+    location = EarthLocation(lat=lat*u.deg, lon=lon*u.deg, height=alt*u.km)
 
     with solar_system_ephemeris.set('builtin'):
         sun = get_sun(time).transform_to(AltAz(obstime=time, location=location))

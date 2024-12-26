@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SpaceControlSystem
+# Target rules for targets named SpaceSimulator
 
 # Build rule for target.
-SpaceControlSystem: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpaceControlSystem
-.PHONY : SpaceControlSystem
+SpaceSimulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpaceSimulator
+.PHONY : SpaceSimulator
 
 # fast build rule for target.
-SpaceControlSystem/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/build
-.PHONY : SpaceControlSystem/fast
+SpaceSimulator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/build
+.PHONY : SpaceSimulator/fast
+
+src/illumination_zone.o: src/illumination_zone.cpp.o
+.PHONY : src/illumination_zone.o
+
+# target to build an object file
+src/illumination_zone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/illumination_zone.cpp.o
+.PHONY : src/illumination_zone.cpp.o
+
+src/illumination_zone.i: src/illumination_zone.cpp.i
+.PHONY : src/illumination_zone.i
+
+# target to preprocess a source file
+src/illumination_zone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/illumination_zone.cpp.i
+.PHONY : src/illumination_zone.cpp.i
+
+src/illumination_zone.s: src/illumination_zone.cpp.s
+.PHONY : src/illumination_zone.s
+
+# target to generate assembly for a file
+src/illumination_zone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/illumination_zone.cpp.s
+.PHONY : src/illumination_zone.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/spacecontrol.o: src/spacecontrol.cpp.o
@@ -158,7 +182,7 @@ src/spacecontrol.o: src/spacecontrol.cpp.o
 
 # target to build an object file
 src/spacecontrol.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/spacecontrol.cpp.o
 .PHONY : src/spacecontrol.cpp.o
 
 src/spacecontrol.i: src/spacecontrol.cpp.i
@@ -166,7 +190,7 @@ src/spacecontrol.i: src/spacecontrol.cpp.i
 
 # target to preprocess a source file
 src/spacecontrol.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/spacecontrol.cpp.i
 .PHONY : src/spacecontrol.cpp.i
 
 src/spacecontrol.s: src/spacecontrol.cpp.s
@@ -174,7 +198,7 @@ src/spacecontrol.s: src/spacecontrol.cpp.s
 
 # target to generate assembly for a file
 src/spacecontrol.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/src/spacecontrol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/src/spacecontrol.cpp.s
 .PHONY : src/spacecontrol.cpp.s
 
 # Help Target
@@ -185,7 +209,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SpaceControlSystem"
+	@echo "... SpaceSimulator"
+	@echo "... src/illumination_zone.o"
+	@echo "... src/illumination_zone.i"
+	@echo "... src/illumination_zone.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

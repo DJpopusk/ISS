@@ -1,4 +1,6 @@
 #include "spacecontrol.h"
+#include <fstream>
+#include <sstream>
 #include <cmath>
 #include <iostream>
 
@@ -14,7 +16,40 @@ void LifeSupport::displayInfo() const {
 PowerSystem::PowerSystem(double output) : energyOutput(output) {}
 
 void PowerSystem::displayInfo() const {
-    std::cout << "Power System: Energy Output: " << energyOutput << " kW" << std::endl;
+    std::cout << "Current energy output: " << energyOutput << std::endl;
+}
+
+bool PowerSystem::isPositionSunny(double latitude, double longitude, double altitude) {
+    return (altitude > 0);
+}
+
+void PowerSystem::determineSunlightExposure(const std::string& filePath) {
+    std::ifstream inFile(filePath);
+    if (!inFile) {
+        std::cerr << "Error: Unable to open file " << filePath << std::endl;
+        return;
+    }
+
+    std::string line;
+    while (std::getline(inFile, line)) {
+        std::stringstream ss(line);
+        double latitude, longitude, altitude;
+        char latDir, longDir;
+        char comma;
+
+        ss >> latitude >> comma >> latDir >> comma >> longitude >> comma >> longDir >> comma >> altitude;
+
+        latitude *= (latDir == 'S') ? -1 : 1;
+        longitude *= (longDir == 'W') ? -1 : 1;
+
+        if (isPositionSunny(latitude, longitude, altitude)) {
+            energyOutput += 10.0;
+            std::cout << "Position in sunlight: (" << latitude << ", " << longitude << ", " << altitude << ")\n";
+        } else {
+            std::cout << "Position not in sunlight: (" << latitude << ", " << longitude << ", " << altitude << ")\n";
+        }
+    }
+    inFile.close();
 }
 
 Propulsion::Propulsion(const std::vector<Position>& pos, double dT)
@@ -26,7 +61,6 @@ double Propulsion::calculateSpeed() const {
     const Position& start = positions.front();
     const Position& end = positions.back();
 
-    // Convert degrees to radians
     auto toRadians = [](double degree) { return degree * M_PI / 180.0; };
 
     double lat1 = toRadians(start.latitude) * (start.latDirection == 'S' ? -1 : 1);

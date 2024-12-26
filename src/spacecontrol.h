@@ -3,10 +3,8 @@
 
 #include <vector>
 #include <string>
-#include <utility>
 #include <iostream>
 
-// Forward declare classes if used before their definition
 class SpaceControl {
 public:
     virtual void displayInfo() const = 0;
@@ -24,18 +22,23 @@ public:
 class PowerSystem : public SpaceControl {
 private:
     double energyOutput;
+
+    bool isPositionSunny(double latitude, double longitude, double altitude);
+
 public:
     PowerSystem(double output);
     void displayInfo() const override;
+
+    void determineSunlightExposure(const std::string& filePath);
 };
 
 class Propulsion : public SpaceControl {
 public:
     struct Position {
         double latitude;
-        char latDirection; // 'N' or 'S'
+        char latDirection;
         double longitude;
-        char longDirection; // 'E' or 'W'
+        char longDirection;
         double altitude;
 
         Position(double lat, char latDir, double lon, char longDir, double alt)

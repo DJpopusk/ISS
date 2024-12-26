@@ -1,19 +1,18 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.10)
 
-# Set the project name
-project(SpaceControlSystem)
+project(SpaceControlSimulation)
 
 # Specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-
-# Add the include directory
-include_directories(include)
+# Include directories
+include_directories(src)
+# Find SOFA library - Adjust these to your local installation if needed
 
 # Add source files
-add_executable(SpaceControlSystem
-        src/main.cpp
-        src/spacecontrol.cpp
-)
+file(GLOB SOURCES "src/*.cpp")
 
-# If using C++17 and above, ensure filesystem library is linked
+# Create executable
+add_executable(SpaceSimulator ${SOURCES})
+
+# Link the SOFA library

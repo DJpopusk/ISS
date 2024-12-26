@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/phonkyponky/CLionProjects/ISS/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SpaceControlSystem.dir/all
+all: CMakeFiles/SpaceSimulator.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/SpaceControlSystem.dir/codegen
+codegen: CMakeFiles/SpaceSimulator.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +75,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SpaceControlSystem.dir/clean
+clean: CMakeFiles/SpaceSimulator.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SpaceControlSystem.dir
+# Target rules for target CMakeFiles/SpaceSimulator.dir
 
 # All Build rule for target.
-CMakeFiles/SpaceControlSystem.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=1,2,3 "Built target SpaceControlSystem"
-.PHONY : CMakeFiles/SpaceControlSystem.dir/all
+CMakeFiles/SpaceSimulator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=1,2,3,4 "Built target SpaceSimulator"
+.PHONY : CMakeFiles/SpaceSimulator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SpaceControlSystem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpaceControlSystem.dir/all
+CMakeFiles/SpaceSimulator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpaceSimulator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 0
-.PHONY : CMakeFiles/SpaceControlSystem.dir/rule
+.PHONY : CMakeFiles/SpaceSimulator.dir/rule
 
 # Convenience name for target.
-SpaceControlSystem: CMakeFiles/SpaceControlSystem.dir/rule
-.PHONY : SpaceControlSystem
+SpaceSimulator: CMakeFiles/SpaceSimulator.dir/rule
+.PHONY : SpaceSimulator
 
 # codegen rule for target.
-CMakeFiles/SpaceControlSystem.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/codegen
-.PHONY : CMakeFiles/SpaceControlSystem.dir/codegen
+CMakeFiles/SpaceSimulator.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/codegen
+.PHONY : CMakeFiles/SpaceSimulator.dir/codegen
 
 # clean rule for target.
-CMakeFiles/SpaceControlSystem.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceControlSystem.dir/build.make CMakeFiles/SpaceControlSystem.dir/clean
-.PHONY : CMakeFiles/SpaceControlSystem.dir/clean
+CMakeFiles/SpaceSimulator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceSimulator.dir/build.make CMakeFiles/SpaceSimulator.dir/clean
+.PHONY : CMakeFiles/SpaceSimulator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
