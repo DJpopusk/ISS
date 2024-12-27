@@ -57,5 +57,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sofa.dir/DependInfo.cmake"
+  "CMakeFiles/sgp4.dir/DependInfo.cmake"
   "CMakeFiles/ISS.dir/DependInfo.cmake"
   )

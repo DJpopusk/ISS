@@ -4,6 +4,7 @@
 #include <vector>
 #include <tuple>
 #include "spacecontrol.h"
+#include "sttracker.h"
 
 std::tuple<double, char, double, char, double> parseCoordinates(const std::string& coordinateString) {
     double latitude, longitude, altitude;
@@ -51,6 +52,17 @@ int main() {
 
     for (const auto& system : systems) {
         system->displayInfo();
+    }
+
+    std::string name = "ISS (ZARYA)";
+    std::string line1 = "1 25544U 98067A   24362.49453935  .00025652  00000+0  45083-3 0  9991";
+    std::string line2 = "2 25544  51.6383  77.6130 0005797  11.6555 348.4567 15.50310083488534";
+    SatelliteTracker tracker(name, line1, line2);
+    tracker.updatePosition();
+
+    // Очистка ресурсов
+    for (auto system : systems) {
+        delete system;
     }
 
     return 0;

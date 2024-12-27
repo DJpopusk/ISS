@@ -811,4 +811,19 @@ CMakeFiles/ISS.dir/src/spacecontrol.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/sstream \
-  /Users/phonkyponky/CLionProjects/ISS/sofa/20231011/c/src/sofa.h
+  /Users/phonkyponky/CLionProjects/ISS/sofa/20231011/c/src/sofa.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SGP4.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Tle.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Util.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Globals.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DateTime.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cassert \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/assert.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TimeSpan.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TleException.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/OrbitalElements.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Eci.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordGeodetic.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Vector.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SatelliteException.h \
+  /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DecayedException.h

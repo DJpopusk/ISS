@@ -72,24 +72,10 @@ include CMakeFiles/ISS.dir/flags.make
 CMakeFiles/ISS.dir/codegen:
 .PHONY : CMakeFiles/ISS.dir/codegen
 
-CMakeFiles/ISS.dir/src/illumination_zone.cpp.o: CMakeFiles/ISS.dir/flags.make
-CMakeFiles/ISS.dir/src/illumination_zone.cpp.o: /Users/phonkyponky/CLionProjects/ISS/src/illumination_zone.cpp
-CMakeFiles/ISS.dir/src/illumination_zone.cpp.o: CMakeFiles/ISS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ISS.dir/src/illumination_zone.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISS.dir/src/illumination_zone.cpp.o -MF CMakeFiles/ISS.dir/src/illumination_zone.cpp.o.d -o CMakeFiles/ISS.dir/src/illumination_zone.cpp.o -c /Users/phonkyponky/CLionProjects/ISS/src/illumination_zone.cpp
-
-CMakeFiles/ISS.dir/src/illumination_zone.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISS.dir/src/illumination_zone.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/phonkyponky/CLionProjects/ISS/src/illumination_zone.cpp > CMakeFiles/ISS.dir/src/illumination_zone.cpp.i
-
-CMakeFiles/ISS.dir/src/illumination_zone.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISS.dir/src/illumination_zone.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/phonkyponky/CLionProjects/ISS/src/illumination_zone.cpp -o CMakeFiles/ISS.dir/src/illumination_zone.cpp.s
-
 CMakeFiles/ISS.dir/src/main.cpp.o: CMakeFiles/ISS.dir/flags.make
 CMakeFiles/ISS.dir/src/main.cpp.o: /Users/phonkyponky/CLionProjects/ISS/src/main.cpp
 CMakeFiles/ISS.dir/src/main.cpp.o: CMakeFiles/ISS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ISS.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ISS.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISS.dir/src/main.cpp.o -MF CMakeFiles/ISS.dir/src/main.cpp.o.d -o CMakeFiles/ISS.dir/src/main.cpp.o -c /Users/phonkyponky/CLionProjects/ISS/src/main.cpp
 
 CMakeFiles/ISS.dir/src/main.cpp.i: cmake_force
@@ -103,7 +89,7 @@ CMakeFiles/ISS.dir/src/main.cpp.s: cmake_force
 CMakeFiles/ISS.dir/src/spacecontrol.cpp.o: CMakeFiles/ISS.dir/flags.make
 CMakeFiles/ISS.dir/src/spacecontrol.cpp.o: /Users/phonkyponky/CLionProjects/ISS/src/spacecontrol.cpp
 CMakeFiles/ISS.dir/src/spacecontrol.cpp.o: CMakeFiles/ISS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ISS.dir/src/spacecontrol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ISS.dir/src/spacecontrol.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISS.dir/src/spacecontrol.cpp.o -MF CMakeFiles/ISS.dir/src/spacecontrol.cpp.o.d -o CMakeFiles/ISS.dir/src/spacecontrol.cpp.o -c /Users/phonkyponky/CLionProjects/ISS/src/spacecontrol.cpp
 
 CMakeFiles/ISS.dir/src/spacecontrol.cpp.i: cmake_force
@@ -114,20 +100,35 @@ CMakeFiles/ISS.dir/src/spacecontrol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISS.dir/src/spacecontrol.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/phonkyponky/CLionProjects/ISS/src/spacecontrol.cpp -o CMakeFiles/ISS.dir/src/spacecontrol.cpp.s
 
+CMakeFiles/ISS.dir/src/sttracker.cpp.o: CMakeFiles/ISS.dir/flags.make
+CMakeFiles/ISS.dir/src/sttracker.cpp.o: /Users/phonkyponky/CLionProjects/ISS/src/sttracker.cpp
+CMakeFiles/ISS.dir/src/sttracker.cpp.o: CMakeFiles/ISS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ISS.dir/src/sttracker.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ISS.dir/src/sttracker.cpp.o -MF CMakeFiles/ISS.dir/src/sttracker.cpp.o.d -o CMakeFiles/ISS.dir/src/sttracker.cpp.o -c /Users/phonkyponky/CLionProjects/ISS/src/sttracker.cpp
+
+CMakeFiles/ISS.dir/src/sttracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ISS.dir/src/sttracker.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/phonkyponky/CLionProjects/ISS/src/sttracker.cpp > CMakeFiles/ISS.dir/src/sttracker.cpp.i
+
+CMakeFiles/ISS.dir/src/sttracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ISS.dir/src/sttracker.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/phonkyponky/CLionProjects/ISS/src/sttracker.cpp -o CMakeFiles/ISS.dir/src/sttracker.cpp.s
+
 # Object files for target ISS
 ISS_OBJECTS = \
-"CMakeFiles/ISS.dir/src/illumination_zone.cpp.o" \
 "CMakeFiles/ISS.dir/src/main.cpp.o" \
-"CMakeFiles/ISS.dir/src/spacecontrol.cpp.o"
+"CMakeFiles/ISS.dir/src/spacecontrol.cpp.o" \
+"CMakeFiles/ISS.dir/src/sttracker.cpp.o"
 
 # External object files for target ISS
 ISS_EXTERNAL_OBJECTS =
 
-ISS: CMakeFiles/ISS.dir/src/illumination_zone.cpp.o
 ISS: CMakeFiles/ISS.dir/src/main.cpp.o
 ISS: CMakeFiles/ISS.dir/src/spacecontrol.cpp.o
+ISS: CMakeFiles/ISS.dir/src/sttracker.cpp.o
 ISS: CMakeFiles/ISS.dir/build.make
 ISS: libsofa.a
+ISS: libsgp4.a
 ISS: CMakeFiles/ISS.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ISS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ISS.dir/link.txt --verbose=$(VERBOSE)

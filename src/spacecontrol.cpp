@@ -4,7 +4,8 @@
 #include <cmath>
 #include <iostream>
 #include <ctime>
-
+#include "sofa.h"
+#include "SGP4.h"
 
 LifeSupport::LifeSupport(double o2, double co2) : oxygenLevel(o2), co2Level(co2) {}
 
@@ -21,6 +22,28 @@ PowerSystem::PowerSystem(double output) : energyOutput(output) {}
 
 void PowerSystem::displayInfo() const {
     std::cout << "Current energy output: " << energyOutput << std::endl;
+}
+double calculateJulianDateSofa() {
+    time_t now = time(NULL);
+    struct tm *ptm = gmtime(&now);
+
+    int year = ptm->tm_year + 1900;
+    int month = ptm->tm_mon + 1;
+    int day = ptm->tm_mday;
+
+    double djm0, djm;
+
+    int status = iauCal2jd(year, month, day, &djm0, &djm);
+    if (status) {
+        std::cerr << "Error: mistake in solving Julian date" << status << std::endl;
+        return -1;
+    }
+
+    double fraction = (ptm->tm_hour + ptm->tm_min / 60.0 + ptm->tm_sec / 3600.0) / 24.0;
+
+    double jd = djm0 + djm + fraction;
+
+    return jd;
 }
 
 double calculateJulianDate() {
@@ -62,11 +85,12 @@ double calculateHourAngle(double longitude, double JD) {
     return LST;
 }
 bool PowerSystem::isPositionSunny(double latitude, double longitude, double altitude) {
-    double JD = calculateJulianDate();
+    double JD = calculateJulianDateSofa();
+    double jd = calculateJulianDate();
+
     double declination = sunDeclination(JD);
     double hourAngle = calculateHourAngle(longitude, JD);
 
-    // Calculate solar altitude
     double latRad = latitude * M_PI / 180;
     double decRad = declination * M_PI / 180;
     double hourAngleRad = (hourAngle - 180) * M_PI / 180;
@@ -109,13 +133,15 @@ void PowerSystem::determineSunlightExposure(const std::string& filePath) {
 Propulsion::Propulsion(const std::vector<Position>& pos, double dT)
     : positions(pos), deltaTime(dT) {}
 
+double toRadians(double degree) {
+    return degree * M_PI / 180.0;
+}
+
 double Propulsion::calculateSpeed() const {
     if (positions.size() < 2) return 0.0;
 
     const Position& start = positions.front();
     const Position& end = positions.back();
-
-    auto toRadians = [](double degree) { return degree * M_PI / 180.0; };
 
     double lat1 = toRadians(start.latitude) * (start.latDirection == 'S' ? -1 : 1);
     double lon1 = toRadians(start.longitude) * (start.longDirection == 'W' ? -1 : 1);
@@ -124,11 +150,10 @@ double Propulsion::calculateSpeed() const {
 
     double dLat = lat2 - lat1;
     double dLon = lon2 - lon1;
-
     double a = std::pow(std::sin(dLat / 2), 2) +
                std::cos(lat1) * std::cos(lat2) * std::pow(std::sin(dLon / 2), 2);
 
-    double c = 2 * std::atan2(std::sqrt(a), std::sqrt(1 - a));
+    double c = 2 * std::asin(std::sqrt(a));
 
     double surfaceDistance = RADIUS_EARTH * c;
     double altitudeChange = end.altitude - start.altitude;

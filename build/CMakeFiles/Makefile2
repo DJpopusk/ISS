@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = /Users/phonkyponky/CLionProjects/ISS/build
 
 # The main recursive "all" target.
 all: CMakeFiles/sofa.dir/all
+all: CMakeFiles/sgp4.dir/all
 all: CMakeFiles/ISS.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/sofa.dir/codegen
+codegen: CMakeFiles/sgp4.dir/codegen
 codegen: CMakeFiles/ISS.dir/codegen
 .PHONY : codegen
 
@@ -78,6 +80,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/sofa.dir/clean
+clean: CMakeFiles/sgp4.dir/clean
 clean: CMakeFiles/ISS.dir/clean
 .PHONY : clean
 
@@ -88,12 +91,12 @@ clean: CMakeFiles/ISS.dir/clean
 CMakeFiles/sofa.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sofa.dir/build.make CMakeFiles/sofa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sofa.dir/build.make CMakeFiles/sofa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target sofa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target sofa"
 .PHONY : CMakeFiles/sofa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sofa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 99
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 93
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sofa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 0
 .PHONY : CMakeFiles/sofa.dir/rule
@@ -113,10 +116,42 @@ CMakeFiles/sofa.dir/clean:
 .PHONY : CMakeFiles/sofa.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/sgp4.dir
+
+# All Build rule for target.
+CMakeFiles/sgp4.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=2,3,4,5,6,7 "Built target sgp4"
+.PHONY : CMakeFiles/sgp4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sgp4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sgp4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles 0
+.PHONY : CMakeFiles/sgp4.dir/rule
+
+# Convenience name for target.
+sgp4: CMakeFiles/sgp4.dir/rule
+.PHONY : sgp4
+
+# codegen rule for target.
+CMakeFiles/sgp4.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/codegen
+.PHONY : CMakeFiles/sgp4.dir/codegen
+
+# clean rule for target.
+CMakeFiles/sgp4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/clean
+.PHONY : CMakeFiles/sgp4.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ISS.dir
 
 # All Build rule for target.
 CMakeFiles/ISS.dir/all: CMakeFiles/sofa.dir/all
+CMakeFiles/ISS.dir/all: CMakeFiles/sgp4.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=1 "Built target ISS"

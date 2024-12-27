@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ISS.dir/src/illumination_zone.cpp.o"
-  "CMakeFiles/ISS.dir/src/illumination_zone.cpp.o.d"
   "CMakeFiles/ISS.dir/src/main.cpp.o"
   "CMakeFiles/ISS.dir/src/main.cpp.o.d"
   "CMakeFiles/ISS.dir/src/spacecontrol.cpp.o"
   "CMakeFiles/ISS.dir/src/spacecontrol.cpp.o.d"
+  "CMakeFiles/ISS.dir/src/sttracker.cpp.o"
+  "CMakeFiles/ISS.dir/src/sttracker.cpp.o.d"
   "ISS"
   "ISS.pdb"
 )

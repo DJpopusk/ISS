@@ -130,6 +130,19 @@ sofa/fast:
 .PHONY : sofa/fast
 
 #=============================================================================
+# Target rules for targets named sgp4
+
+# Build rule for target.
+sgp4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sgp4
+.PHONY : sgp4
+
+# fast build rule for target.
+sgp4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/build
+.PHONY : sgp4/fast
+
+#=============================================================================
 # Target rules for targets named ISS
 
 # Build rule for target.
@@ -141,6 +154,390 @@ ISS: cmake_check_build_system
 ISS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/build
 .PHONY : ISS/fast
+
+sgp4/libsgp4/CoordGeodetic.o: sgp4/libsgp4/CoordGeodetic.cc.o
+.PHONY : sgp4/libsgp4/CoordGeodetic.o
+
+# target to build an object file
+sgp4/libsgp4/CoordGeodetic.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordGeodetic.cc.o
+.PHONY : sgp4/libsgp4/CoordGeodetic.cc.o
+
+sgp4/libsgp4/CoordGeodetic.i: sgp4/libsgp4/CoordGeodetic.cc.i
+.PHONY : sgp4/libsgp4/CoordGeodetic.i
+
+# target to preprocess a source file
+sgp4/libsgp4/CoordGeodetic.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordGeodetic.cc.i
+.PHONY : sgp4/libsgp4/CoordGeodetic.cc.i
+
+sgp4/libsgp4/CoordGeodetic.s: sgp4/libsgp4/CoordGeodetic.cc.s
+.PHONY : sgp4/libsgp4/CoordGeodetic.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/CoordGeodetic.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordGeodetic.cc.s
+.PHONY : sgp4/libsgp4/CoordGeodetic.cc.s
+
+sgp4/libsgp4/CoordTopocentric.o: sgp4/libsgp4/CoordTopocentric.cc.o
+.PHONY : sgp4/libsgp4/CoordTopocentric.o
+
+# target to build an object file
+sgp4/libsgp4/CoordTopocentric.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordTopocentric.cc.o
+.PHONY : sgp4/libsgp4/CoordTopocentric.cc.o
+
+sgp4/libsgp4/CoordTopocentric.i: sgp4/libsgp4/CoordTopocentric.cc.i
+.PHONY : sgp4/libsgp4/CoordTopocentric.i
+
+# target to preprocess a source file
+sgp4/libsgp4/CoordTopocentric.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordTopocentric.cc.i
+.PHONY : sgp4/libsgp4/CoordTopocentric.cc.i
+
+sgp4/libsgp4/CoordTopocentric.s: sgp4/libsgp4/CoordTopocentric.cc.s
+.PHONY : sgp4/libsgp4/CoordTopocentric.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/CoordTopocentric.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/CoordTopocentric.cc.s
+.PHONY : sgp4/libsgp4/CoordTopocentric.cc.s
+
+sgp4/libsgp4/DateTime.o: sgp4/libsgp4/DateTime.cc.o
+.PHONY : sgp4/libsgp4/DateTime.o
+
+# target to build an object file
+sgp4/libsgp4/DateTime.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DateTime.cc.o
+.PHONY : sgp4/libsgp4/DateTime.cc.o
+
+sgp4/libsgp4/DateTime.i: sgp4/libsgp4/DateTime.cc.i
+.PHONY : sgp4/libsgp4/DateTime.i
+
+# target to preprocess a source file
+sgp4/libsgp4/DateTime.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DateTime.cc.i
+.PHONY : sgp4/libsgp4/DateTime.cc.i
+
+sgp4/libsgp4/DateTime.s: sgp4/libsgp4/DateTime.cc.s
+.PHONY : sgp4/libsgp4/DateTime.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/DateTime.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DateTime.cc.s
+.PHONY : sgp4/libsgp4/DateTime.cc.s
+
+sgp4/libsgp4/DecayedException.o: sgp4/libsgp4/DecayedException.cc.o
+.PHONY : sgp4/libsgp4/DecayedException.o
+
+# target to build an object file
+sgp4/libsgp4/DecayedException.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DecayedException.cc.o
+.PHONY : sgp4/libsgp4/DecayedException.cc.o
+
+sgp4/libsgp4/DecayedException.i: sgp4/libsgp4/DecayedException.cc.i
+.PHONY : sgp4/libsgp4/DecayedException.i
+
+# target to preprocess a source file
+sgp4/libsgp4/DecayedException.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DecayedException.cc.i
+.PHONY : sgp4/libsgp4/DecayedException.cc.i
+
+sgp4/libsgp4/DecayedException.s: sgp4/libsgp4/DecayedException.cc.s
+.PHONY : sgp4/libsgp4/DecayedException.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/DecayedException.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/DecayedException.cc.s
+.PHONY : sgp4/libsgp4/DecayedException.cc.s
+
+sgp4/libsgp4/Eci.o: sgp4/libsgp4/Eci.cc.o
+.PHONY : sgp4/libsgp4/Eci.o
+
+# target to build an object file
+sgp4/libsgp4/Eci.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Eci.cc.o
+.PHONY : sgp4/libsgp4/Eci.cc.o
+
+sgp4/libsgp4/Eci.i: sgp4/libsgp4/Eci.cc.i
+.PHONY : sgp4/libsgp4/Eci.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Eci.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Eci.cc.i
+.PHONY : sgp4/libsgp4/Eci.cc.i
+
+sgp4/libsgp4/Eci.s: sgp4/libsgp4/Eci.cc.s
+.PHONY : sgp4/libsgp4/Eci.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Eci.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Eci.cc.s
+.PHONY : sgp4/libsgp4/Eci.cc.s
+
+sgp4/libsgp4/Globals.o: sgp4/libsgp4/Globals.cc.o
+.PHONY : sgp4/libsgp4/Globals.o
+
+# target to build an object file
+sgp4/libsgp4/Globals.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Globals.cc.o
+.PHONY : sgp4/libsgp4/Globals.cc.o
+
+sgp4/libsgp4/Globals.i: sgp4/libsgp4/Globals.cc.i
+.PHONY : sgp4/libsgp4/Globals.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Globals.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Globals.cc.i
+.PHONY : sgp4/libsgp4/Globals.cc.i
+
+sgp4/libsgp4/Globals.s: sgp4/libsgp4/Globals.cc.s
+.PHONY : sgp4/libsgp4/Globals.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Globals.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Globals.cc.s
+.PHONY : sgp4/libsgp4/Globals.cc.s
+
+sgp4/libsgp4/Observer.o: sgp4/libsgp4/Observer.cc.o
+.PHONY : sgp4/libsgp4/Observer.o
+
+# target to build an object file
+sgp4/libsgp4/Observer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Observer.cc.o
+.PHONY : sgp4/libsgp4/Observer.cc.o
+
+sgp4/libsgp4/Observer.i: sgp4/libsgp4/Observer.cc.i
+.PHONY : sgp4/libsgp4/Observer.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Observer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Observer.cc.i
+.PHONY : sgp4/libsgp4/Observer.cc.i
+
+sgp4/libsgp4/Observer.s: sgp4/libsgp4/Observer.cc.s
+.PHONY : sgp4/libsgp4/Observer.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Observer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Observer.cc.s
+.PHONY : sgp4/libsgp4/Observer.cc.s
+
+sgp4/libsgp4/OrbitalElements.o: sgp4/libsgp4/OrbitalElements.cc.o
+.PHONY : sgp4/libsgp4/OrbitalElements.o
+
+# target to build an object file
+sgp4/libsgp4/OrbitalElements.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/OrbitalElements.cc.o
+.PHONY : sgp4/libsgp4/OrbitalElements.cc.o
+
+sgp4/libsgp4/OrbitalElements.i: sgp4/libsgp4/OrbitalElements.cc.i
+.PHONY : sgp4/libsgp4/OrbitalElements.i
+
+# target to preprocess a source file
+sgp4/libsgp4/OrbitalElements.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/OrbitalElements.cc.i
+.PHONY : sgp4/libsgp4/OrbitalElements.cc.i
+
+sgp4/libsgp4/OrbitalElements.s: sgp4/libsgp4/OrbitalElements.cc.s
+.PHONY : sgp4/libsgp4/OrbitalElements.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/OrbitalElements.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/OrbitalElements.cc.s
+.PHONY : sgp4/libsgp4/OrbitalElements.cc.s
+
+sgp4/libsgp4/SGP4.o: sgp4/libsgp4/SGP4.cc.o
+.PHONY : sgp4/libsgp4/SGP4.o
+
+# target to build an object file
+sgp4/libsgp4/SGP4.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SGP4.cc.o
+.PHONY : sgp4/libsgp4/SGP4.cc.o
+
+sgp4/libsgp4/SGP4.i: sgp4/libsgp4/SGP4.cc.i
+.PHONY : sgp4/libsgp4/SGP4.i
+
+# target to preprocess a source file
+sgp4/libsgp4/SGP4.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SGP4.cc.i
+.PHONY : sgp4/libsgp4/SGP4.cc.i
+
+sgp4/libsgp4/SGP4.s: sgp4/libsgp4/SGP4.cc.s
+.PHONY : sgp4/libsgp4/SGP4.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/SGP4.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SGP4.cc.s
+.PHONY : sgp4/libsgp4/SGP4.cc.s
+
+sgp4/libsgp4/SatelliteException.o: sgp4/libsgp4/SatelliteException.cc.o
+.PHONY : sgp4/libsgp4/SatelliteException.o
+
+# target to build an object file
+sgp4/libsgp4/SatelliteException.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SatelliteException.cc.o
+.PHONY : sgp4/libsgp4/SatelliteException.cc.o
+
+sgp4/libsgp4/SatelliteException.i: sgp4/libsgp4/SatelliteException.cc.i
+.PHONY : sgp4/libsgp4/SatelliteException.i
+
+# target to preprocess a source file
+sgp4/libsgp4/SatelliteException.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SatelliteException.cc.i
+.PHONY : sgp4/libsgp4/SatelliteException.cc.i
+
+sgp4/libsgp4/SatelliteException.s: sgp4/libsgp4/SatelliteException.cc.s
+.PHONY : sgp4/libsgp4/SatelliteException.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/SatelliteException.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SatelliteException.cc.s
+.PHONY : sgp4/libsgp4/SatelliteException.cc.s
+
+sgp4/libsgp4/SolarPosition.o: sgp4/libsgp4/SolarPosition.cc.o
+.PHONY : sgp4/libsgp4/SolarPosition.o
+
+# target to build an object file
+sgp4/libsgp4/SolarPosition.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SolarPosition.cc.o
+.PHONY : sgp4/libsgp4/SolarPosition.cc.o
+
+sgp4/libsgp4/SolarPosition.i: sgp4/libsgp4/SolarPosition.cc.i
+.PHONY : sgp4/libsgp4/SolarPosition.i
+
+# target to preprocess a source file
+sgp4/libsgp4/SolarPosition.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SolarPosition.cc.i
+.PHONY : sgp4/libsgp4/SolarPosition.cc.i
+
+sgp4/libsgp4/SolarPosition.s: sgp4/libsgp4/SolarPosition.cc.s
+.PHONY : sgp4/libsgp4/SolarPosition.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/SolarPosition.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/SolarPosition.cc.s
+.PHONY : sgp4/libsgp4/SolarPosition.cc.s
+
+sgp4/libsgp4/TimeSpan.o: sgp4/libsgp4/TimeSpan.cc.o
+.PHONY : sgp4/libsgp4/TimeSpan.o
+
+# target to build an object file
+sgp4/libsgp4/TimeSpan.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TimeSpan.cc.o
+.PHONY : sgp4/libsgp4/TimeSpan.cc.o
+
+sgp4/libsgp4/TimeSpan.i: sgp4/libsgp4/TimeSpan.cc.i
+.PHONY : sgp4/libsgp4/TimeSpan.i
+
+# target to preprocess a source file
+sgp4/libsgp4/TimeSpan.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TimeSpan.cc.i
+.PHONY : sgp4/libsgp4/TimeSpan.cc.i
+
+sgp4/libsgp4/TimeSpan.s: sgp4/libsgp4/TimeSpan.cc.s
+.PHONY : sgp4/libsgp4/TimeSpan.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/TimeSpan.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TimeSpan.cc.s
+.PHONY : sgp4/libsgp4/TimeSpan.cc.s
+
+sgp4/libsgp4/Tle.o: sgp4/libsgp4/Tle.cc.o
+.PHONY : sgp4/libsgp4/Tle.o
+
+# target to build an object file
+sgp4/libsgp4/Tle.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Tle.cc.o
+.PHONY : sgp4/libsgp4/Tle.cc.o
+
+sgp4/libsgp4/Tle.i: sgp4/libsgp4/Tle.cc.i
+.PHONY : sgp4/libsgp4/Tle.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Tle.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Tle.cc.i
+.PHONY : sgp4/libsgp4/Tle.cc.i
+
+sgp4/libsgp4/Tle.s: sgp4/libsgp4/Tle.cc.s
+.PHONY : sgp4/libsgp4/Tle.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Tle.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Tle.cc.s
+.PHONY : sgp4/libsgp4/Tle.cc.s
+
+sgp4/libsgp4/TleException.o: sgp4/libsgp4/TleException.cc.o
+.PHONY : sgp4/libsgp4/TleException.o
+
+# target to build an object file
+sgp4/libsgp4/TleException.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TleException.cc.o
+.PHONY : sgp4/libsgp4/TleException.cc.o
+
+sgp4/libsgp4/TleException.i: sgp4/libsgp4/TleException.cc.i
+.PHONY : sgp4/libsgp4/TleException.i
+
+# target to preprocess a source file
+sgp4/libsgp4/TleException.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TleException.cc.i
+.PHONY : sgp4/libsgp4/TleException.cc.i
+
+sgp4/libsgp4/TleException.s: sgp4/libsgp4/TleException.cc.s
+.PHONY : sgp4/libsgp4/TleException.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/TleException.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/TleException.cc.s
+.PHONY : sgp4/libsgp4/TleException.cc.s
+
+sgp4/libsgp4/Util.o: sgp4/libsgp4/Util.cc.o
+.PHONY : sgp4/libsgp4/Util.o
+
+# target to build an object file
+sgp4/libsgp4/Util.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Util.cc.o
+.PHONY : sgp4/libsgp4/Util.cc.o
+
+sgp4/libsgp4/Util.i: sgp4/libsgp4/Util.cc.i
+.PHONY : sgp4/libsgp4/Util.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Util.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Util.cc.i
+.PHONY : sgp4/libsgp4/Util.cc.i
+
+sgp4/libsgp4/Util.s: sgp4/libsgp4/Util.cc.s
+.PHONY : sgp4/libsgp4/Util.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Util.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Util.cc.s
+.PHONY : sgp4/libsgp4/Util.cc.s
+
+sgp4/libsgp4/Vector.o: sgp4/libsgp4/Vector.cc.o
+.PHONY : sgp4/libsgp4/Vector.o
+
+# target to build an object file
+sgp4/libsgp4/Vector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Vector.cc.o
+.PHONY : sgp4/libsgp4/Vector.cc.o
+
+sgp4/libsgp4/Vector.i: sgp4/libsgp4/Vector.cc.i
+.PHONY : sgp4/libsgp4/Vector.i
+
+# target to preprocess a source file
+sgp4/libsgp4/Vector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Vector.cc.i
+.PHONY : sgp4/libsgp4/Vector.cc.i
+
+sgp4/libsgp4/Vector.s: sgp4/libsgp4/Vector.cc.s
+.PHONY : sgp4/libsgp4/Vector.s
+
+# target to generate assembly for a file
+sgp4/libsgp4/Vector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sgp4.dir/build.make CMakeFiles/sgp4.dir/sgp4/libsgp4/Vector.cc.s
+.PHONY : sgp4/libsgp4/Vector.cc.s
 
 sofa/20231011/c/src/a2af.o: sofa/20231011/c/src/a2af.c.o
 .PHONY : sofa/20231011/c/src/a2af.o
@@ -6094,30 +6491,6 @@ sofa/20231011/c/src/zr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sofa.dir/build.make CMakeFiles/sofa.dir/sofa/20231011/c/src/zr.c.s
 .PHONY : sofa/20231011/c/src/zr.c.s
 
-src/illumination_zone.o: src/illumination_zone.cpp.o
-.PHONY : src/illumination_zone.o
-
-# target to build an object file
-src/illumination_zone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/illumination_zone.cpp.o
-.PHONY : src/illumination_zone.cpp.o
-
-src/illumination_zone.i: src/illumination_zone.cpp.i
-.PHONY : src/illumination_zone.i
-
-# target to preprocess a source file
-src/illumination_zone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/illumination_zone.cpp.i
-.PHONY : src/illumination_zone.cpp.i
-
-src/illumination_zone.s: src/illumination_zone.cpp.s
-.PHONY : src/illumination_zone.s
-
-# target to generate assembly for a file
-src/illumination_zone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/illumination_zone.cpp.s
-.PHONY : src/illumination_zone.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -6166,6 +6539,30 @@ src/spacecontrol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/spacecontrol.cpp.s
 .PHONY : src/spacecontrol.cpp.s
 
+src/sttracker.o: src/sttracker.cpp.o
+.PHONY : src/sttracker.o
+
+# target to build an object file
+src/sttracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/sttracker.cpp.o
+.PHONY : src/sttracker.cpp.o
+
+src/sttracker.i: src/sttracker.cpp.i
+.PHONY : src/sttracker.i
+
+# target to preprocess a source file
+src/sttracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/sttracker.cpp.i
+.PHONY : src/sttracker.cpp.i
+
+src/sttracker.s: src/sttracker.cpp.s
+.PHONY : src/sttracker.s
+
+# target to generate assembly for a file
+src/sttracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ISS.dir/build.make CMakeFiles/ISS.dir/src/sttracker.cpp.s
+.PHONY : src/sttracker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -6175,7 +6572,56 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ISS"
+	@echo "... sgp4"
 	@echo "... sofa"
+	@echo "... sgp4/libsgp4/CoordGeodetic.o"
+	@echo "... sgp4/libsgp4/CoordGeodetic.i"
+	@echo "... sgp4/libsgp4/CoordGeodetic.s"
+	@echo "... sgp4/libsgp4/CoordTopocentric.o"
+	@echo "... sgp4/libsgp4/CoordTopocentric.i"
+	@echo "... sgp4/libsgp4/CoordTopocentric.s"
+	@echo "... sgp4/libsgp4/DateTime.o"
+	@echo "... sgp4/libsgp4/DateTime.i"
+	@echo "... sgp4/libsgp4/DateTime.s"
+	@echo "... sgp4/libsgp4/DecayedException.o"
+	@echo "... sgp4/libsgp4/DecayedException.i"
+	@echo "... sgp4/libsgp4/DecayedException.s"
+	@echo "... sgp4/libsgp4/Eci.o"
+	@echo "... sgp4/libsgp4/Eci.i"
+	@echo "... sgp4/libsgp4/Eci.s"
+	@echo "... sgp4/libsgp4/Globals.o"
+	@echo "... sgp4/libsgp4/Globals.i"
+	@echo "... sgp4/libsgp4/Globals.s"
+	@echo "... sgp4/libsgp4/Observer.o"
+	@echo "... sgp4/libsgp4/Observer.i"
+	@echo "... sgp4/libsgp4/Observer.s"
+	@echo "... sgp4/libsgp4/OrbitalElements.o"
+	@echo "... sgp4/libsgp4/OrbitalElements.i"
+	@echo "... sgp4/libsgp4/OrbitalElements.s"
+	@echo "... sgp4/libsgp4/SGP4.o"
+	@echo "... sgp4/libsgp4/SGP4.i"
+	@echo "... sgp4/libsgp4/SGP4.s"
+	@echo "... sgp4/libsgp4/SatelliteException.o"
+	@echo "... sgp4/libsgp4/SatelliteException.i"
+	@echo "... sgp4/libsgp4/SatelliteException.s"
+	@echo "... sgp4/libsgp4/SolarPosition.o"
+	@echo "... sgp4/libsgp4/SolarPosition.i"
+	@echo "... sgp4/libsgp4/SolarPosition.s"
+	@echo "... sgp4/libsgp4/TimeSpan.o"
+	@echo "... sgp4/libsgp4/TimeSpan.i"
+	@echo "... sgp4/libsgp4/TimeSpan.s"
+	@echo "... sgp4/libsgp4/Tle.o"
+	@echo "... sgp4/libsgp4/Tle.i"
+	@echo "... sgp4/libsgp4/Tle.s"
+	@echo "... sgp4/libsgp4/TleException.o"
+	@echo "... sgp4/libsgp4/TleException.i"
+	@echo "... sgp4/libsgp4/TleException.s"
+	@echo "... sgp4/libsgp4/Util.o"
+	@echo "... sgp4/libsgp4/Util.i"
+	@echo "... sgp4/libsgp4/Util.s"
+	@echo "... sgp4/libsgp4/Vector.o"
+	@echo "... sgp4/libsgp4/Vector.i"
+	@echo "... sgp4/libsgp4/Vector.s"
 	@echo "... sofa/20231011/c/src/a2af.o"
 	@echo "... sofa/20231011/c/src/a2af.i"
 	@echo "... sofa/20231011/c/src/a2af.s"
@@ -6920,15 +7366,15 @@ help:
 	@echo "... sofa/20231011/c/src/zr.o"
 	@echo "... sofa/20231011/c/src/zr.i"
 	@echo "... sofa/20231011/c/src/zr.s"
-	@echo "... src/illumination_zone.o"
-	@echo "... src/illumination_zone.i"
-	@echo "... src/illumination_zone.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/spacecontrol.o"
 	@echo "... src/spacecontrol.i"
 	@echo "... src/spacecontrol.s"
+	@echo "... src/sttracker.o"
+	@echo "... src/sttracker.i"
+	@echo "... src/sttracker.s"
 .PHONY : help
 
 
