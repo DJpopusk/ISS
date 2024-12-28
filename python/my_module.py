@@ -2,13 +2,10 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
-# Функция для преобразования широты и долготы в декартовы координаты
 def lat_lon_to_cartesian(lat, lon, altitude):
-    # Преобразуем углы в радианы
     lat_rad = np.radians(lat)
     lon_rad = np.radians(lon)
 
-    # Радиус Земли + высота орбиты (если высота дана в километрах)
     R = 6371 + altitude
 
     x = R * np.cos(lat_rad) * np.cos(lon_rad)
@@ -17,7 +14,6 @@ def lat_lon_to_cartesian(lat, lon, altitude):
 
     return x, y, z
 
-# Чтение данных из файла
 coordinates = []
 with open('coordinates1.txt', 'r') as file:
     for line in file:
@@ -31,7 +27,6 @@ with open('coordinates1.txt', 'r') as file:
         altitude = float(parts[4])
         coordinates.append((lat, lon, altitude))
 
-# Преобразование в декартовы координаты
 x_coords = []
 y_coords = []
 z_coords = []
@@ -42,7 +37,6 @@ for lat, lon, alt in coordinates:
     y_coords.append(y)
     z_coords.append(z)
 
-# Построение графика
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 

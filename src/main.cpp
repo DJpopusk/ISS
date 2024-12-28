@@ -45,9 +45,9 @@ int main() {
     }
 
     if (positions.size() >= 2) {
-        systems.push_back(new Propulsion(positions, 60.0));
+        systems.push_back(new Propulsion(positions, 10.0));
     } else {
-        std::cerr << "Insufficient data to calculate speed." << std::endl;
+        throw AllError(AllError::INVALID_INPUT, "Insufficient data to calculate speed.");
     }
 
     for (const auto& system : systems) {

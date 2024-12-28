@@ -7,8 +7,8 @@
 
 class SatelliteTracker {
 private:
-    Tle tle;
-    SGP4 sgp4;
+    libsgp4::Tle tle;
+    libsgp4::SGP4 sgp4;
 
 public:
     SatelliteTracker(const std::string& name, const std::string& line1, const std::string& line2);

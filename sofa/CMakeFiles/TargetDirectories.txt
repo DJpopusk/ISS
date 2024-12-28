@@ -1,0 +1,5 @@
+/Users/phonkyponky/CLionProjects/ISS/sofa/CMakeFiles/sofa.dir
+/Users/phonkyponky/CLionProjects/ISS/sofa/CMakeFiles/sgp4.dir
+/Users/phonkyponky/CLionProjects/ISS/sofa/CMakeFiles/ISS.dir
+/Users/phonkyponky/CLionProjects/ISS/sofa/CMakeFiles/edit_cache.dir
+/Users/phonkyponky/CLionProjects/ISS/sofa/CMakeFiles/rebuild_cache.dir

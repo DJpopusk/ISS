@@ -4,6 +4,27 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <exception>
+
+class AllError : public std::exception {
+public:
+    enum ErrorType {
+        FILE_NOT_FOUND,
+        INVALID_INPUT,
+        DOMAIN_ERROR
+    };
+
+private:
+    ErrorType type;
+    std::string message;
+
+public:
+    AllError(ErrorType type, const std::string& new_message) : type(type), message(new_message) {}
+
+    const char* what() const noexcept override {
+        return message.c_str();
+    }
+};
 
 class SpaceControl {
 public:
@@ -20,12 +41,11 @@ public:
 };
 
 class PowerSystem : public SpaceControl {
-private:
+public:
     double energyOutput;
 
     bool isPositionSunny(double latitude, double longitude, double altitude);
 
-public:
     PowerSystem(double output);
     void displayInfo() const override;
 
