@@ -72,7 +72,7 @@ bool PowerSystem::isPositionSunny(double latitude, double longitude, double alti
     double jd = calculateJulianDateSofa();
     double declination = calculateSolarDeclination(jd);
 
-    double hourAngle = calculateHourAngle(jd, longitude);
+    double hourAngle = calculateHourAngle(jd, longitude) + 30.0;
     double cosLatitude = cos(toRadians(latitude));
     double sinLatitude = sin(toRadians(latitude));
     double cosDeclination = cos(toRadians(declination));
@@ -105,7 +105,7 @@ void PowerSystem::determineSunlightExposure(const std::string& filePath) {
         longitude *= (longDir == 'W') ? -1 : 1;
 
         if (isPositionSunny(latitude, longitude, altitude)) {
-            energyOutput += 10.0;
+            energyOutput += 28.3;
             std::cout << "Position in sunlight: (" << latitude << ", " << longitude << ", " << altitude << ")\n";
         } else {
             std::cout << "Position not in sunlight: (" << latitude << ", " << longitude << ", " << altitude << ")\n";

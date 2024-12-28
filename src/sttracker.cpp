@@ -27,7 +27,7 @@ void SatelliteTracker::updatePosition() {
         std::cout << "Latitude: " << latitude << ", Longitude: " << longitude << ", Altitude: " << altitude << std::endl;
 
         bool sunny = powerSystem.isPositionSunny(latitude, longitude, altitude);
-        double energyChange = sunny ? 10.0 : 0.0;
+        double energyChange = sunny ? 28.3 : 0.0;
         powerSystem.energyOutput += energyChange;
 
         std::cout << "Energy added: " << energyChange << std::endl;

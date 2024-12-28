@@ -45,7 +45,7 @@ int main() {
     }
 
     if (positions.size() >= 2) {
-        systems.push_back(new Propulsion(positions, 10.0));
+        systems.push_back(new Propulsion(positions, 20.0));
     } else {
         throw AllError(AllError::INVALID_INPUT, "Insufficient data to calculate speed.");
     }
