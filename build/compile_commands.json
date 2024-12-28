@@ -1,0 +1,212 @@
+[
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/CoordGeodetic.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordGeodetic.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordGeodetic.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/CoordGeodetic.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/CoordTopocentric.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordTopocentric.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordTopocentric.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/CoordTopocentric.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/DateTime.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DateTime.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DateTime.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/DateTime.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/DecayedException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DecayedException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DecayedException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/DecayedException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Eci.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Eci.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Eci.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Eci.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Globals.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Globals.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Globals.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Globals.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Observer.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Observer.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Observer.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Observer.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/OrbitalElements.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/OrbitalElements.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/OrbitalElements.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/OrbitalElements.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/SGP4.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SGP4.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SGP4.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/SGP4.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/SatelliteException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SatelliteException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SatelliteException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/SatelliteException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/SolarPosition.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SolarPosition.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SolarPosition.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/SolarPosition.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/TimeSpan.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TimeSpan.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TimeSpan.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/TimeSpan.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Tle.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Tle.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Tle.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Tle.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/TleException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TleException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TleException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/TleException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Util.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Util.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Util.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Util.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sgp4.dir/Vector.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Vector.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Vector.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4.dir/Vector.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/CoordGeodetic.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordGeodetic.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordGeodetic.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/CoordGeodetic.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/CoordTopocentric.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordTopocentric.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CoordTopocentric.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/CoordTopocentric.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/DateTime.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DateTime.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DateTime.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/DateTime.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/DecayedException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DecayedException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/DecayedException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/DecayedException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Eci.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Eci.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Eci.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Eci.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Globals.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Globals.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Globals.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Globals.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Observer.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Observer.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Observer.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Observer.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/OrbitalElements.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/OrbitalElements.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/OrbitalElements.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/OrbitalElements.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/SGP4.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SGP4.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SGP4.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/SGP4.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/SatelliteException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SatelliteException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SatelliteException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/SatelliteException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/SolarPosition.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SolarPosition.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/SolarPosition.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/SolarPosition.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/TimeSpan.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TimeSpan.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TimeSpan.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/TimeSpan.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Tle.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Tle.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Tle.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Tle.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/TleException.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TleException.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/TleException.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/TleException.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Util.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Util.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Util.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Util.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/libsgp4",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dsgp4s_EXPORTS -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIC -o CMakeFiles/sgp4s.dir/Vector.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Vector.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/Vector.cc",
+  "output": "sgp4/libsgp4/CMakeFiles/sgp4s.dir/Vector.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/sattrack",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/sattrack.dir/sattrack.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/sattrack/sattrack.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/sattrack/sattrack.cc",
+  "output": "sgp4/sattrack/CMakeFiles/sattrack.dir/sattrack.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/runtest",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/runtest.dir/runtest.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/runtest/runtest.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/runtest/runtest.cc",
+  "output": "sgp4/runtest/CMakeFiles/runtest.dir/runtest.cc.o"
+},
+{
+  "directory": "/Users/phonkyponky/CLionProjects/ISS/build/sgp4/passpredict",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Wno-long-long -Wcast-align -Wsign-conversion -std=c++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/passpredict.dir/passpredict.cc.o -c /Users/phonkyponky/CLionProjects/ISS/sgp4/passpredict/passpredict.cc",
+  "file": "/Users/phonkyponky/CLionProjects/ISS/sgp4/passpredict/passpredict.cc",
+  "output": "sgp4/passpredict/CMakeFiles/passpredict.dir/passpredict.cc.o"
+}
+]

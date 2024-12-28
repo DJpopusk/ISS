@@ -268,6 +268,15 @@ PYTHON_EXECUTABLE:FILEPATH=/Library/Frameworks/Python.framework/Versions/3.12/bi
 //Path to a library.
 PYTHON_LIBRARY:FILEPATH=/Library/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
 
+//Value Computed by CMake
+SGP4_BINARY_DIR:STATIC=/Users/phonkyponky/CLionProjects/ISS/build/sgp4
+
+//Value Computed by CMake
+SGP4_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SGP4_SOURCE_DIR:STATIC=/Users/phonkyponky/CLionProjects/ISS/sgp4
+
 //Path to a library.
 SOFA_LIBRARY:FILEPATH=SOFA_LIBRARY-NOTFOUND
 
@@ -399,7 +408,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

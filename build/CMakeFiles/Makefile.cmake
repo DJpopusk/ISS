@@ -11,6 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeSystem.cmake"
+  "/Users/phonkyponky/CLionProjects/ISS/sgp4/CMakeLists.txt"
+  "/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4/CMakeLists.txt"
+  "/Users/phonkyponky/CLionProjects/ISS/sgp4/passpredict/CMakeLists.txt"
+  "/Users/phonkyponky/CLionProjects/ISS/sgp4/runtest/CMakeLists.txt"
+  "/Users/phonkyponky/CLionProjects/ISS/sgp4/sattrack/CMakeLists.txt"
   "/usr/local/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -52,11 +57,20 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sgp4/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sgp4/libsgp4/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sgp4/sattrack/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sgp4/runtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sgp4/passpredict/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sofa.dir/DependInfo.cmake"
-  "CMakeFiles/sgp4.dir/DependInfo.cmake"
   "CMakeFiles/ISS.dir/DependInfo.cmake"
+  "sgp4/libsgp4/CMakeFiles/sgp4.dir/DependInfo.cmake"
+  "sgp4/libsgp4/CMakeFiles/sgp4s.dir/DependInfo.cmake"
+  "sgp4/sattrack/CMakeFiles/sattrack.dir/DependInfo.cmake"
+  "sgp4/runtest/CMakeFiles/runtest.dir/DependInfo.cmake"
+  "sgp4/passpredict/CMakeFiles/passpredict.dir/DependInfo.cmake"
   )

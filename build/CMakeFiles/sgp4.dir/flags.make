@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/phonkyponky/CLionProjects/ISS/sgp4/libsgp4 -I/Users/phonkyponky/CLionProjects/ISS/sofa/20231011/c/src
+CXX_INCLUDES = -I/Users/phonkyponky/CLionProjects/ISS/sgp4 -I/Users/phonkyponky/CLionProjects/ISS/sofa/20231011/c/src
 
 CXX_FLAGS = -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
 

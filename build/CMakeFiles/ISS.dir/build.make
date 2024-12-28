@@ -128,7 +128,7 @@ ISS: CMakeFiles/ISS.dir/src/spacecontrol.cpp.o
 ISS: CMakeFiles/ISS.dir/src/sttracker.cpp.o
 ISS: CMakeFiles/ISS.dir/build.make
 ISS: libsofa.a
-ISS: libsgp4.a
+ISS: sgp4/libsgp4/libsgp4.a
 ISS: CMakeFiles/ISS.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/phonkyponky/CLionProjects/ISS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ISS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ISS.dir/link.txt --verbose=$(VERBOSE)
